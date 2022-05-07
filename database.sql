@@ -1,0 +1,16 @@
+CREATE TABLE post (
+    id INT UNSIGNED NOT NULL AUTOINCREMENT,
+    name VARCHAR(30) NOT NULL,
+    firtsname VARCHAR(20) NOT NULL,
+    lastname VARCHAR(20) NOT NULL,
+    PRIMARY KEY(id)
+)
+
+
+CREATE TABLE post (
+    id INT UNSIGNED NOT NULL AUTOINCREMENT,
+    name VARCHAR(30) NOT NULL,
+    firtsname VARCHAR(20) NOT NULL,
+    lastname VARCHAR(20) NOT NULL,
+    PRIMARY KEY(id)
+)

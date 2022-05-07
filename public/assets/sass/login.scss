@@ -1,0 +1,158 @@
+@import "libs/colors.scss";
+@import "libs/responsive.scss";
+@import "libs/mixins.scss";
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.body-light {
+    height: 100vh;
+    @include d-f-center-center(0);
+}
+
+.container-form {
+    @include d-f-center-center(0);
+    font-size: 1rem;
+    --bg-white: #fff;
+    --color-secondary: #1c2224;
+    --gray: #828da0;
+    --primary: #0065ff;
+    --color: #fff;
+}
+
+.container-form .form {
+    display: block;
+    z-index: 999;
+    background: var(--bg-white);
+    box-shadow: 0 5px 25px rgba(0 0 0 / 20%);
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 50px 40px;
+    width: 400px;
+
+    & .form-brand {
+        display: block;
+        text-decoration: none;
+        margin-bottom: 12px;
+        font-size: 1rem;
+        color: var(--color-secondary);
+    }
+
+    & .form-title {
+        color: var(--color-secondary);
+        margin-bottom: 40px;
+        font-weight: 700;
+        font-size: 2em;
+        text-align: center;
+    }
+
+
+    & .links {
+        margin: 10px 0;
+
+        & .link-left {
+            text-align: left;
+        }
+
+        & .link-right {
+            text-align: right;
+            margin: 10px 0;
+        }
+
+        & .link {
+            display: block;
+            width: 100%;
+            font-size: 0.90em;
+            text-decoration: none;
+            font-weight: 500;
+            margin-bottom: 10px;
+            color: var(--primary);
+            opacity: .80;
+            transition: all 1s ease;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+
+    & .btn-form {
+        padding: 10px 18px;
+        border: none;
+        outline: none;
+        background: var(--primary);
+        color: var(--color);
+        display: block;
+        font-size: 1em;
+        cursor: pointer;
+        margin: 12px 0;
+        border-radius: 5px;
+        opacity: .70;
+        transition: all 1s ease-in-out;
+
+        &:hover {
+            opacity: 1;
+        }
+        
+
+    }
+    
+
+ 
+
+    & .field {
+        border-bottom: 3px solid #eee;
+        @include d-f-center-center(0 0 25px 0);
+        justify-items: center;
+        padding: 2px;
+        transition: border-color 1s ease;
+
+        &.active {
+            border-color: var(--primary);
+        }
+
+        & .field-input {
+            outline: none;
+            border: none;
+            width: 100%;
+            font-size: 1em;
+            padding-left: 8px;
+            padding-right: 15px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            background: none;
+
+
+
+            &::placeholder {
+                color: var(--gray);
+                font-size: 0.90em;
+            }
+        }
+
+        & .icon-field {
+            margin-right: 10px;
+            font-size: 1.3em;
+            color: var(--gray);
+
+            &.primary {
+                cursor: pointer;
+                
+                transition: 0.20s ease;
+
+                &:hover {
+                    color: var(--primary);
+                }
+            }
+        }
+        
+    }
+}

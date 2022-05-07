@@ -1,0 +1,66 @@
+@mixin tables-responsive {
+     
+    &,
+    .tr-body,
+    .tr-header,
+    .td-cel,
+    .th-cel,
+    tbody,
+    thead {
+        display: block;
+        width: 100%;
+    }
+
+    & .tr-body:nth-child(odd) {
+        background: inherit;
+        color: var(--color-white);
+    }
+    .tr-header {
+        display: none;
+    }
+
+    & .tr-body .td-action {
+        justify-content: left;
+    }
+
+    & .tr-body .td-cel {
+        position: relative;
+        padding-left: 50%;
+        margin-top: -1px;
+        margin-left: auto;
+        
+        &:nth-child(odd) {
+            background: var(--blur-light);
+        }
+
+        &::before {
+            content: attr(table-label);
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 45%;
+            background: var(--table-dark);
+            color: var(--color-white);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            font-weight: 900;
+
+        }
+    }
+
+    & .tr-body {
+        margin-bottom: 35px;
+    }
+}
+
+@mixin d-f-center-center($margin: 0) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @if $margin != 0 {
+        margin: $margin;
+    }
+}

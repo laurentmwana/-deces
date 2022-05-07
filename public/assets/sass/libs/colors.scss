@@ -1,0 +1,60 @@
+// les couleurs de bases
+$color: #d4dcff !default;
+$color-dark: #000 !default;
+$color-primary: #4a8ee1 !default;
+$color-secondary: #1b2432 !default;
+$color-warning: yellow !default;
+$color-white: #fff !default;
+
+$dark: #0b0d1b;
+
+
+// les bordures
+$border-primary: $color-primary !default;
+$border-dark: $color-dark !default;
+$border-light: $color !default;
+$border-gray: #aaa !default;
+
+// les ombres
+$shadow-dark: #0f112917 !default;
+$shadow-primary: $color-primary !default;
+$shadow-light: #d4dcff24 !default;
+$shadow-white: $color !default;
+
+
+// body
+$body-dark: #1b1e3d !default;
+$body-light: $color !default;
+
+// les backgrounds
+$bg-light: #d4dcff !default;
+$bg-dark: $dark !default;
+$bg-primary: #1869cd !default;
+$bg-black: #000 !default;
+$bg-white: #fff !default;
+$bg-blue: #0a0af8 !default;
+
+// les cards
+$card-dark: $color-secondary !default;
+$card-primary: $color-primary !default;
+$card-light: #d1e1e9 !default;
+$card-warning: $color-warning !default;
+$card-secondary: $color-secondary !default;
+
+
+$blur-dark: rgba(0, 0, 0, .2) !default;
+$blur-primary: rgba(24, 105, 205, .2) !default;
+$blur-light: rgba(238, 238, 238, .2) !default;
+
+
+
+
+
+$table-dark: $bg-black;
+$table-gray: #eee;
+$table-light: #ddd;
+
+
+
+
+// 
