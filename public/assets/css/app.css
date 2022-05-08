@@ -809,6 +809,7 @@
 .card .card-body .body-desc {
   padding: 15px;
   font-size: 16px;
+  text-align: justify;
 }
 
 .card-full {
@@ -816,12 +817,22 @@
   height: auto;
   padding: 20px;
   margin-bottom: 40px;
-  border-radius: 10% 0 10%;
+  border-radius: 85px 0 85px;
 }
 .card-full .card-body .body-desc {
+  text-align: justify;
+  line-height: 1.9;
   padding: 10px;
   margin-bottom: 10px;
   color: var(--color);
+  text-indent: 30%;
+}
+.card-full .card-body .body-desc::first-letter {
+  font-size: 50px;
+  font-weight: 900;
+}
+.card-full .card-body .body-desc::first-line {
+  line-height: 1.2;
 }
 .card-full .card-body .body-date {
   font-style: italic;
@@ -1159,6 +1170,7 @@
     padding: 5px;
     color: inherit;
     opacity: 0.7;
+    text-align: justify;
   }
 }
 

@@ -67,17 +67,18 @@ class App {
      */
     public function run () {
 
-        try {
-            return $this->route->run();
-        } catch (RouteException $routeErrors) {
-           $routeErrors->Errors(
-               $this->route, 
-               $this->dependancies['renderer'],
-               $this->url
-            );
-        }
+        return $this->route->run();
+        // try {
+           
+        // } catch (RouteException $routeErrors) {
+        //    $routeErrors->Errors(
+        //        $this->route, 
+        //        $this->dependancies['renderer'],
+        //        $this->url
+        //     );
+        // }
 
-        return null;
+        // return null;
         
     }
 

@@ -1,7 +1,14 @@
 <?php
 
-namespace Models\Tables;
+namespace App\Models\Tables;
 
-class categorieTable {
+use App\Models\Entity\CategoryEntity;
+
+class categorieTable extends Table {
+
+
+    protected $table = "category";
+
+    protected $entity =  CategoryEntity::class;
 
 }

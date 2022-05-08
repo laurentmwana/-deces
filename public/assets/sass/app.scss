@@ -975,6 +975,7 @@
     & .body-desc {
         padding: 15px;
         font-size: 16px;
+        text-align: justify;
     }
 }
 
@@ -983,12 +984,26 @@
     height: auto;
     padding: 20px;
     margin-bottom: 40px;
-    border-radius: 10% 0 10%;
+    border-radius: 85px 0 85px;
 
     & .card-body .body-desc {
+        text-align: justify;
+        line-height: 1.90;
         padding: 10px;
         margin-bottom: 10px;
         color: var(--color);
+        
+        text-indent: 30%;
+
+        &::first-letter {
+            font-size: 50px;
+            font-weight: 900;
+            
+        }
+
+        &::first-line {
+            line-height: 1.20;
+        }
     }
 
     & .card-body .body-date {
@@ -1294,6 +1309,7 @@
             padding: 5px;
             color: inherit;
             opacity: .70;
+            text-align: justify;
         }
     }
 }

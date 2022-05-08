@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="<?= SOURCES . "css" . DIRECTORY_SEPARATOR . "app.css"  ?>">
     <link rel="stylesheet" href="<?= SOURCES . "vendor" . DIRECTORY_SEPARATOR . "fontawesome-free-6.1.1-web" . DIRECTORY_SEPARATOR . "css" . DIRECTORY_SEPARATOR .  "all.css"  ?>">
 </head>
-<body class="body-main body-dark">
+<body class="body-main body-dark" style="height:100vh ;">
      <!-- header -->
      <div class="header" id="header">
         <div class="header-home">
@@ -50,7 +50,7 @@
     <?=  $content ?>
 
     
-    <footer class="footer">
+    <footer class="footer" style="margin-top: auto;">
         &copy; 2022 laurent mwana ( <span class="fa fa-wheelchair"></span> Décès ), toute réproduction est autorisé
     </footer>
 

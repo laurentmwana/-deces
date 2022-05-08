@@ -81,7 +81,8 @@ class Route {
      * @return boolean
      */
     public function check (string $url): bool {
-        $path = preg_replace("#:(^[\w]+$)#", "([^/]+$)",  $this->getPath());
+        
+        $path = preg_replace('#:([\w]+)#', '([^/]+)',  $this->getPath());
         $regex = "#^{$path}$#i";
         if (preg_match($regex, $url, $matches)) {
             array_shift($matches);
